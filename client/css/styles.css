@@ -1,0 +1,22 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background: #f1f1f1;
+    font-family: Verdana, Arial;
+    font-size: 2em;
+}
+input, button{
+    padding: 10px;
+    margin:20px;
+}
+button{
+    background: #00995d;
+    border: 1px solid #00995d;
+    color: #fff;
+}
+.container{
+    width:500px;
+    margin:0 auto;
+}

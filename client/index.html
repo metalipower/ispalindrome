@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shaw and Partner Challenge</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body ng-app="app" ng-cloak>
+    <div class="container" ng-controller="ShawAndPartnersController as ctrl">
+        <form ng-submit="ctrl.send(word)">
+        <input type="text" ng-model="word">
+            <button>Send</button>
+        </form>
+        <div ng-show="ctrl.isPalindrome && ctrl.palindrome.length > 0">
+            ohhhh yeaah we have a winner: <strong>{{ctrl.palindrome}}</strong> is a palindrome!!!
+
+        </div>
+        <div ng-show="!ctrl.isPalindrome && ctrl.palindrome.length > 0">
+            Houston we have a problem: <strong>{{ctrl.palindrome}}</strong> is not a palindrome!!!
+        </div>
+
+    </div>
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/shaw-and-partners-controller.js"></script>
+</body>
+
+</html>
